@@ -23,7 +23,7 @@ const AddStudent = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
+const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
@@ -32,17 +32,22 @@ const AddStudent = () => {
     } catch (error) {
         console.error('Signup failed:', error.response.data);
     }
-};
+}; 
 
   return (
-    <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-md shadow-md">
-      <h2 className="text-2xl font-semibold mb-4">Student Registration Form</h2>
+    <>
+    <div class="center-container">
+    <div className="Add-Student-container">
+      <div className="flex-container">
+      <div className="student-side">
+        <img src="/assets/imgs/bata.png" />
+      </div>
+
+      <div className="student-reg">
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label htmlFor="firstname" className="block text-sm font-medium text-gray-600">
-            First Name
-          </label>
           <input
+            placeholder="First Name: "
             type="text"
             id="firstname"
             name="firstname"
@@ -53,10 +58,8 @@ const AddStudent = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="lastname" className="block text-sm font-medium text-gray-600">
-            Last Name
-          </label>
           <input
+          placeholder="Last Name: "
             type="text"
             id="lastname"
             name="lastname"
@@ -66,11 +69,9 @@ const AddStudent = () => {
             required
           />
         </div>
-        <div className="mb-4">
-          <label htmlFor="middlename" className="block text-sm font-medium text-gray-600">
-            Middle Name
-          </label>
+        <div className="Lcontainer">
           <input
+          placeholder="Middle Name: "
             type="text"
             id="middlename"
             name="middlename"
@@ -78,12 +79,9 @@ const AddStudent = () => {
             onChange={handleChange}
             className="mt-1 p-2 w-full border rounded-md"
           />
-        </div>
-        <div className="mb-4">
-          <label htmlFor="email" className="block text-sm font-medium text-gray-600">
-            Email
-          </label>
+    
           <input
+          placeholder="Email: "
             type="email"
             id="email"
             name="email"
@@ -92,12 +90,12 @@ const AddStudent = () => {
             className="mt-1 p-2 w-full border rounded-md"
             required
           />
+    
         </div>
-        <div className="mb-4">
-          <label htmlFor="age" className="block text-sm font-medium text-gray-600">
-            Age
-          </label>
+
+        <div className="Rcontainer">
           <input
+          placeholder="Age: "
             type="number"
             id="age"
             name="age"
@@ -106,31 +104,25 @@ const AddStudent = () => {
             className="mt-1 p-2 w-full border rounded-md"
             required
           />
-        </div>
-        <div className="mb-4">
-          <label htmlFor="gender" className="block text-sm font-medium text-gray-600">
-            Gender
-          </label>
+
           <select
             id="gender"
             name="gender"
             value={formData.gender}
             onChange={handleChange}
             className="mt-1 p-2 w-full border rounded-md"
-            required
-          >
+            required>
             <option value="" disabled>
-              Select Gender
+             Gender
             </option>
             <option value="male">Male</option>
             <option value="female">Female</option>
           </select>
         </div>
+
         <div className="mb-4">
-          <label htmlFor="school" className="block text-sm font-medium text-gray-600">
-            School
-          </label>
           <input
+            placeholder="School: "
             type="text"
             id="school"
             name="school"
@@ -140,11 +132,10 @@ const AddStudent = () => {
             required
           />
         </div>
+        
         <div className="mb-4">
-            <label htmlFor="username" className="block text-sm font-medium text-gray-600">
-                Username
-            </label>
             <input
+                placeholder="Username: "
                 type="text"
                 id="username"
                 name="username"
@@ -155,10 +146,8 @@ const AddStudent = () => {
             />
         </div>
         <div className="mb-4">
-            <label htmlFor="password" className="block text-sm font-medium text-gray-600">
-                Password
-            </label>
             <input
+                placeholder="Password: "
                 type="password"
                 id="password"
                 name="password"
@@ -169,10 +158,8 @@ const AddStudent = () => {
             />
         </div>
          <div className="mb-4">
-            <label htmlFor="password_confirmation" className="block text-sm font-medium text-gray-600">
-                Confirm Password
-            </label>
             <input
+              placeholder="Confirm Password: "
                 type="password"
                 id="password_confirmation"
                 name="password_confirmation"
@@ -186,10 +173,14 @@ const AddStudent = () => {
           type="submit"
           className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
         >
-          Register
+         Create Account
         </button>
       </form>
+      </div>
     </div>
+    </div>
+    </div>
+    </>
   );
 };
 
