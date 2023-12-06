@@ -15,15 +15,19 @@ const StudentAccount = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Data from Laravel API</h2>
+    <div className='studentlist-content'>
+      <div className='center-container'>
+      <div className='student-container'>
       <ul>
-        {data.map(student => (
-          <li key={student.id}>
-            {`${student.firstname} ${student.lastname}, ${student.age}, ${student.gender}, ${student.school}`}
-          </li>
-        ))}
-      </ul>
+  {data.map(student => (
+    <li className='student-lines' key={student.id}>
+      {`${student.firstname} ${student.lastname}, ${student.age}, ${student.gender}, ${student.school}`}
+    </li>
+  ))}
+</ul>
+
+      </div>
+      </div>
     </div>
   );
 };

@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+#logo{
+  padding-left: 30px;
+}
+
 .center-container{
   display: flex;
   justify-content: center;
@@ -23,7 +27,6 @@ body {
   height: 650px;
   flex-shrink: 0;
 }
-
 
 .flex-container {
   display: flex;
@@ -84,3 +87,109 @@ cursor: pointer;
   width: 310;
  
   }
+  
+  
+  /* sidebar css*/
+
+  .sidebar-container {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+  }
+.open {
+  left: 0; /* Slide the sidebar in */
+}
+
+.closed {
+  left: -300px; /* Slide the sidebar out */
+}
+
+.toggle-btn {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  display: block;
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.topnav {
+  background-color: #fff;
+  transition: transform 0.3s ease; /* Adding a transition for smooth movement */
+}
+
+.topnav-open {
+  transform: translateX(300px); /* Adjust this value to match the sidebar width */
+}
+
+.sidebarbt {
+  border-radius: 50px;
+  font-size: 25px;
+  height: 90px;
+  padding: 20px;
+  background-color: #756AAE;
+  width: 320px;
+  margin-left: -220px; /* Change margin-right to margin-left */
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  margin-top: 3px;
+}
+
+.sidebarbt2 {
+  border-radius: 50px;
+  font-size: 25px;
+  height: 90px;
+  padding: 20px;
+  background-color: #FCC40B;
+  width: 320px;
+  margin-left: -220px; /* Change margin-right to margin-left */
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  margin-top: 3px;
+}
+
+#sbbt1 {
+  color: #fff;
+  /* Padding modified to position the text */
+  padding-left: 200px; /* Adjust padding to position text accordingly */
+}
+
+#sbbt2 {
+  color: #fff;
+  /* Padding modified to position the text */
+  padding-left: 200px; /* Adjust padding to position text accordingly */
+}
+
+
+.student-lines{
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.student-container{
+  border-radius: 30px;
+  width: 1050px;
+  height: 650px;
+  flex-shrink: 0;
+}
