@@ -81,7 +81,7 @@ const handleSubmit = async (e) => {
           />
     
           <input
-          placeholder="Email: "
+          placeholder="Parent Email: "
             type="email"
             id="email"
             name="email"
@@ -135,7 +135,7 @@ const handleSubmit = async (e) => {
         
         <div className="mb-4">
             <input
-                placeholder="Username: "
+                placeholder="School ID: "
                 type="text"
                 id="username"
                 name="username"
