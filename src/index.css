@@ -12,10 +12,72 @@ body {
   padding-left: 30px;
 }
 .header1 {
-  left: 50%;
-  transform: translate(46%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  font-size: 30px;
+  padding: 10px 20px;
+  margin: 0 auto;
   background-color: #0CB0FA;
-  width: 1050px;
+  width: 1010px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  left: 50%;
+  transform: translate(5%);
+}
+
+.header1 span {
+  flex: 1; /* Take remaining space */
+}
+
+.header1 button {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 10px;
+  height: 50px;
+  background: #31FF6B;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+  font-family: 'Happy School', sans-serif;
+}
+
+.header1 button img {
+  vertical-align: middle;
+  width: 70px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+
+.header {
+  left: 50%;
+  transform: translate(36%);
+  background-color: #ffffff;
+  width: 1185px;
+  height: 90;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+}
+
+.header3 {
+  top: 50%;
+  left: 50%;
+  transform: translate(36%, -490%);
+  background-color: #ffffff;
+  width: 1185px;
+  height: 90;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
 }
@@ -179,6 +241,45 @@ cursor: pointer;
   margin-top: 3px;
 }
 
+.sidebarbt3 {
+  border-radius: 50px;
+  font-size: 25px;
+  height: 90px;
+  padding: 20px;
+  background-color: #FE7870;
+  width: 320px;
+  margin-left: -220px; /* Change margin-right to margin-left */
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  margin-top: 3px;
+}
+.sidebarbt4 {
+  border-radius: 50px;
+  font-size: 25px;
+  height: 90px;
+  padding: 20px;
+  background-color: #85C763;
+  width: 320px;
+  margin-left: -220px; /* Change margin-right to margin-left */
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  margin-top: 3px;
+}
+.sidebarbt5 {
+  border-radius: 50px;
+  font-size: 25px;
+  height: 90px;
+  padding: 20px;
+  background-color: #39B8FF;
+  width: 320px;
+  margin-left: -220px; /* Change margin-right to margin-left */
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  margin-top: 3px;
+}
 #sbbt1 {
   color: #fff;
   /* Padding modified to position the text */
@@ -191,6 +292,21 @@ cursor: pointer;
   padding-left: 200px; /* Adjust padding to position text accordingly */
 }
 
+#sbbt3 {
+  color: #fff;
+  /* Padding modified to position the text */
+  padding-left: 200px; /* Adjust padding to position text accordingly */
+}
+#sbbt4 {
+  color: #fff;
+  /* Padding modified to position the text */
+  padding-left: 200px; /* Adjust padding to position text accordingly */
+}
+#sbbt5 {
+  color: #fff;
+  /* Padding modified to position the text */
+  padding-left: 200px; /* Adjust padding to position text accordingly */
+}
 
 .student-lines{
   background: #fff;
@@ -208,4 +324,165 @@ cursor: pointer;
   width: 1050px;
   height: 650px;
   flex-shrink: 0;
+}
+
+.image-gallery {
+  display: flex;
+}
+
+.image-container {
+  margin-right: 50px;
+  text-align: center;
+}
+
+.image-container:last-child {
+  margin-right: 0; /* Remove margin from the last container */
+}
+
+.image-container img {
+  width: 260px; /* Set your desired width */
+  height: 260px;
+  border-radius: 10px;
+  
+}
+button.image-button {
+  width: 250px;
+  height: 50px;
+  font-size: 22px;
+  border-radius: 10px;
+  background: #56BE7E;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.image-button:hover {
+  background: #3e8e57; /* Change color on hover if desired */
+}
+
+.header4 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-1%, -450%);
+  width: 1190px;
+
+}
+
+.header-item {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 26px;
+  padding: 8px;
+  text-align: center;
+}
+
+.id {
+  grid-column: 1 / span 1;
+}
+
+.full-name {
+  grid-column: 2 / span 1;
+}
+
+.date {
+  grid-column: 3 / span 1;
+}
+
+.type {
+  grid-column: 4 / span 1;
+}
+
+.school {
+  grid-column: 5 / span 1;
+}
+
+.actions {
+  grid-column: 6 / span 1;
+}
+
+.student-wrapper {
+  display: flex;
+  justify-content: center; /* or flex-start, flex-end based on your needs */
+  align-items: center; /* or baseline, stretch based on your needs */
+  /* Other styles for the wrapper if needed */
+}
+
+.student-wrapper ul{
+  top: 50%;
+  width: 1190px;
+  left: 50%;
+  transform: translate(-3%, -82%);
+}
+
+.student-container ul{
+  top: 50%;
+  width: 1190px;
+  left: 50%;
+  transform: translate(-3%, 5%);
+}
+
+.header5 {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Adjusted grid columns */
+  justify-content: space-between; /* Distribute space between elements */
+  align-items: center;
+  background-color: white;
+  height: 55px;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 10px 20px; /* Adjusted padding */
+  width: 1153px;
+  margin: 0 auto;
+  left: 50%;
+  transform: translate(6%);
+}
+
+.header5 button {
+  display: flex; /* Enable flexbox for button content alignment */
+  align-items: center; /* Align items vertically in flex container */
+  justify-content: space-between; /* Space between button content */
+  font-size: 22px;
+  border-radius: 10px;
+  background: #0CB0FA;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+  width: 250px;
+  left: 50%;
+  transform: translate(150%);
+  font-family: 'Happy School', sans-serif;  
+}
+
+.header5 button img {
+  vertical-align: middle; /* Align the image vertically within the button */
+  width: 40px; /* Set the width of the image */
+  height: 40px; /* Set the height of the image */
+  margin-left: 10px; /* Adjust the spacing between text and image */
+}
+.header6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(35.3%, 50%);
+  width: 1193px;
+
 }

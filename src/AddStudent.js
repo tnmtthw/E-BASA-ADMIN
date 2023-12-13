@@ -36,9 +36,12 @@ const handleSubmit = async (e) => {
 
   return (
     <>
-      <div className="header1">
-          <h2 className="text-xl font-bold">Add Student Account</h2>
-        </div>
+    <br />
+    <div class="header1">
+  <span>Add Student Account</span>
+  <button>Pending Student Accounts<img src='/assets/imgs/bell.png'/></button>
+</div>
+
     <div class="center-container"> 
       
     <div className="Add-Student-container">
